@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Natural Language-Based Software Engineering</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+    <link href="../css/demo.css" rel="stylesheet" />
+    <link href="../css/sbst.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/highlight.min.css"><link rel="stylesheet" href="../css/sbst.css">
+</head>
+
+
+	<body class="landing-page sidebar-collapse">
+
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="../index.html"  rel="tooltip" title="" data-placement="bottom">
+                    NL-Based Software Engineering
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="/img/blurred-image-1.jpg">
+              <ul class="navbar-nav  ml-auto">
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="../organisation/">
+            <i class='fa fa-group'></i>
+            <span>Organization</span>
+          </a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="../tools/">
+            <i class='fa fa-bug'></i>
+            <span>Tool Competition</span>
+          </a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="../keynotes/">
+              <img src="../img/calendar.png" height="13px" width="13px">
+            <span>Keynote &amp; Tutorial</span>
+          </a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="../program/">
+              <img src="../img/calendar.png" height="13px" width="13px">
+            <span>Program</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../social-event/">
+              <img src="../img/location.png" height="15px" width="15px">
+            <span>Social event</span>
+          </a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="../venue/">
+              <img src="../img/location.png" height="15px" width="15px">
+            <span>Venue</span>
+          </a>
+        </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+  <div class="wrapper">
+        
+        <div class="page-header page-header-small" filter-color="blue">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('../img/Skyline.jpg');">
+            </div>
+            <br>
+                <div class="container">
+                  <div class="content-center">
+                    <h1 class="title">NLBSE 2023</h1>
+                    <div class="text-center">
+                       <h5>The 2nd Intl. Workshop on NL-based Software Engineering</h5>
+                        <!-- <h5>Co-located with <a href="https://conf.researchr.org/home/icse-2023" style="color:white">ICSE 2023</a></h5> -->
+                            <h5>May 20 2023, Melbourne, Australia</h5>
+                <!-- <a href="" class="btn btn-primary btn-icon btn-round"><i class="fa fa-facebook-square"></i></a> -->
+                        <a href="https://twitter.com/NLBSE_workshop" class="btn btn-primary btn-icon btn-round"> <i class="fa fa-twitter"></i></a>
+
+                    </div>
+                  </div>
+                </div>
+
+            
+        </div>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-left">
+
+                <h2 class="title">Tool Competition</h2>
+
+                <!--Tool competition slides <a href=""> <img src="../img/pdf.png" style="width:20px;height:20px;"> </a>-->
+                <h3>Introduction</h3>
+
+                <p>NLP-based approaches and tools have been proposed to improve the efficiency of software engineers, processes, and products, by automatically processing natural language artifacts (issues, emails, commits, etc.).</p>
+
+                <p>We believe that the availability of accurate tools is becoming increasingly necessary to improve Software Engineering (SE) processes. Two important processes are (i) issue management and prioritization and (ii) code comment classification where developers have to understand, classify, prioritize, assign, etc. incoming issues and code comments reported by end-users and developers.</p>
+
+							  <p>We are pleased to announce the second edition of the NLBSE'23 tool competition on <b>issue report classification</b> and, for the first time on <b>code comment classification</b>; two important tasks in issue and code comment management and prioritization.</p>
+
+                <p>You are invited to participate in one or both tool competitions.</p>
+
+                <h3 id="issue-report-classification">Issue Report Classification</h3>
+                <p>
+                 The issue report classification competition consists of building and assessing a
+			<b>multi-class classification model</b> to classify issue reports
+			as belonging to one category
+			representing the type of information
+			they convey.
+                </p>
+                <p>
+                  We provide a dataset encompassing more than <b>1.4 million</b> labeled issue reports
+			(as bugs, enhancements, questions, and documentation)
+			extracted from real open-source projects.
+                  You are invited to leverage this dataset
+			to evaluate your proposed approache(s)
+			and compare your achieved results against
+			our baselines (based on FastText and RoBERTa).
+                </p>
+                <p>
+                  You must train, tune and evaluate your multi-class classification model(s)
+			using the provided training and test sets.
+			To access these datasets as well as the competition's rules and baselines,
+			please check out our
+			<b><a href="https://github.com/nlbse2023/issue-report-classification">repository</a></b>.
+		</p>
+
+                <!-- <h6>Competition overview</h6> -->
+
+
+                <!-- <p>The submissions will be ranked based on the multi-class F1 score (micro-averaged) achieved by the proposed classifiers on the test set, as indicated in the papers.</p> -->
+
+							  <!-- <p>The submission with the highest F1 score will be the winner of the competition.</p> -->
+
+                <h6>Updates</h6>
+
+                <p>Compared to the <a href="https://nlbse2022.github.io/tools/">2022 version</a>
+			of the issue report competition, we have made the following changes:</p>
+                <ul>
+                  <li>we have increased the size of the competition dataset from 800K to 1.4M issue reports,</li>
+                  <li>a new category labeled as 'documentation' is added to the dataset,</li>
+                  <li>we included synonyms of labels in the new dataset,</li>
+                  <li>we removed multi-label issues from the dataset,</li>
+                  <li>similarly, we removed non-english issues from the dataset, and finally</li>
+                  <li>we added a Transformer-based (RoBERTa) baseline to this round.</li>
+               </ul>
+
+	       <p>The issue report classification competition is organized by: <b>Rafael Kallis</b> (<a href="mailto:rk@rafaelkallis.com">rk@rafaelkallis.com</a>) and <b>Maliheh Izadi</b> (<a href="mailto:m.izadi@tudelft.nl">m.izadi@tudelft.nl</a>).</p>
+
+               <h3 id="code-comment-classification">Code Comment Classification</h3>
+               <p>
+                The code comment classification competition consists of building and testing <b>a set of binary classifiers</b> to classify class comment sentences as belonging to one or more categories representing the types of information that a sentence is conveying.
+               </p>
+               <p>
+                For the competition, we provide a dataset of <b>6738</b> class comment sentences and <b>19</b> baseline classifiers based on the Random Forest model. Participants will propose their classifiers for this task to outperform the baselines.
+               </p>
+
+               <p>
+                  You must train, tune and evaluate your binary classifiers using the provided training and test sets.
+                  We created a <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b> and <b><a href="https://github.com/nlbse2023/code-comment-classification">repository</a></b> with information about the code comment classification competition including dataset, rules, baselines, and results.
+                </p>
+
+		<p>The code comment classification competition is organized by: <b>Pooja Rani</b> (<a href="mailto:rani@ifi.uzh.ch">rani@ifi.uzh.ch</a>), <b>Oscar Chaparro</b> (<a href="mailto:oscarch@wm.edu">oscarch@wm.edu</a>) and <b>Luca Pascarella</b> (<a href="mailto:lpascarella@ethz.ch">lpascarella@ethz.ch</a>).</p>
+
+               <!-- <h6>Competition overview</h6> -->
+
+               <!-- <p>
+                Since participants will submit a set of binary classifiers, the submissions will be ranked based on the number of classifiers that outperform the baselines by F1 score. Such performance must be computed on the test set.
+               </p> -->
+
+               <!-- <p>
+                The submission with the highest count of classifiers with higher F1 scores than the baselines will be the <b>winner of the competition</b>. In the case of ties, the highest average of F1 scores across <b>all 19</b> (7 for Java, 7 for Pharo, and 5 for Python) binary classifiers will declare the winner.
+               </p> -->
+
+               <!-- <p>
+                The reported F1 scores and count of outperforming classifiers in the paper will be used to rank the participants.
+               </p> -->
+
+
+              <h3>Participation</h3>
+              <p>
+                To participate in any of the competitions, you must train, tune and evaluate your models using the provided training and test sets of the respective competition.
+              </p>
+              <p>
+                Additionally, you must write a paper (2-4 pages) describing:
+              </p>
+							<ul>
+							  <li>The architecture and details of the classification models;</li>
+							  <li>The procedure used to pre-process the data;</li>
+							  <li>The procedure used to tune the classifiers on the training sets;</li>
+							  <li>The results of your classifiers on the test sets;</li>
+							  <li>A link to the code/tool with proper documentation on how to run it and replicate the results.</li>
+							</ul>
+              <!-- <p>To participate in the competition, you must:</p>
+							<ul>
+								<li>Train and tune a set of Binary Classifier using the provided training sets (more details below).</li>
+								<li>Evaluate your classifier on the provided test sets</li>
+								<li>Write a paper (2-4 pages) describing:</li>
+									<ul>
+									  <li>The architecture and details of the classification models;</li>
+									  <li>The procedure used to pre-process the data;</li>
+									  <li>The procedure used to tune the classifiers on the training set;</li>
+									  <li>The results of your classifiers on the test set;</li>
+									  <li>Additional info.: provide a link to your code/tool with proper documentation on how to run it and replicate the results</li>
+									</ul>
+              </ul> -->
+
+						  <p>Submit the paper by the deadline using our <a href="https://forms.gle/x1Wy2iA8L7ju6mNb8">submission form</a>.</p>
+
+              <p>All submissions must conform to the <a href="https://conf.researchr.org/track/icse-2023/icse-2023-technical-track#how-to-submit">ICSE'23 formatting and submission instructions</a> and do not need to be double-blinded.</p>
+
+              <p>Participation in both competitions is allowed, but requires a <b>distinct</b> paper for each submission.</p>
+
+              <h3>Submission acceptance and competition</h3>
+
+							<p>Submissions will be evaluated and accepted based on <b>correctness</b> and <b>reproducibility</b>, defined by the following criteria:</p>
+								<ul>
+								   <li>Clarity and detail of the paper content;</li>
+								   <li>Availability of the code/tool, including the training/tuning/evaluation pipeline, released as open-source;</li>
+								   <li>Correct training/tuning/evaluation of your code/tool on the provided data;</li>
+                   <li>Correct report of the metrics and results;</li>
+								   <li>Clarity of the code documentation.</li>
+								</ul>
+
+							<p>The accepted submissions will be <b>published at the workshop proceedings</b>.</p>
+
+							<h6>Issue Report Classification</h6>
+              <p>
+                Participants will submit one or more multi-class classifiers and the submissions will be ranked based on the F1 score (micro-averaged) achieved by the proposed classifiers on the <a href="https://github.com/nlbse2023/issue-report-classification">issue report test set</a>, as indicated in the papers.
+              </p>
+              <p>
+                The submission with the highest F1 score will be the <b>winner</b> of the issue report classification competition.
+              </p>
+
+              <h6>Code Comment Classification</h6>
+              <p>
+                Since participants will submit a set of binary classifiers (based on a single ML/DL model -- see more details in our <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b>), we will use a formula to rank the competition submissions and determine a winner.
+              </p>
+
+
+              <p>
+                  The formula, specified in our <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b> , accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the proportion of classifiers that improve the baseline classifiers. Essentially, we encourage participants to improve as many baseline classifiers as  possible.
+              </p>
+              <p>
+                 The reported F1 scores and count of outperforming classifiers in the paper will be used to rank the participants.
+              </p>
+
+              <h3 id="citing">Citing relevant work</h3>
+              <p>
+                Since you will be using the dataset and possibly the original work behind the dataset, please cite the following references in your paper:
+              </p>
+              <pre><code class="language-tex">@inproceedings{nlbse2023,
+  author={Kallis, Rafael and Izadi, Maliheh and Pascarella, Luca and Chaparro, Oscar and Rani, Pooja},
+  title={The NLBSE'23 Tool Competition},
+  booktitle={Proceedings of The 2nd International Workshop on Natural Language-based Software Engineering (NLBSE'23)},
+  year={2023}
+}</code></pre>
+
+              <h6>Issue Report Classification</h6>
+              <p>Please cite if participating in the issue report classification competition:</p>
+              <pre><code class="language-tex">@article{kallis2020tickettagger,
+  author={Kallis, Rafael and Di Sorbo, Andrea and Canfora, Gerardo and Panichella, Sebastiano},
+  title={Predicting issue types on GitHub},
+  journal={Science of Computer Programming},
+  volume={205},
+  pages={102598},
+  year={2021},
+  issn={0167-6423},
+  doi={https://doi.org/10.1016/j.scico.2020.102598},
+  url={https://www.sciencedirect.com/science/article/pii/S0167642320302069}
+}</code></pre>
+
+<pre><code class="language-tex">@inproceedings{kallis2019tickettagger,
+  author    = {Kallis, Rafael and Di Sorbo, Andrea and Canfora, Gerardo and Panichella, Sebastiano},
+  title     = {Ticket Tagger: Machine Learning Driven Issue Classification},
+  booktitle = {2019 {IEEE} International Conference on Software Maintenance and Evolution,
+               {ICSME} 2019, Cleveland, OH, USA, September 29 - October 4, 2019},
+  pages     = {406--409},
+  publisher = { {IEEE} },
+  year      = {2019},
+  doi       = {10.1109/ICSME.2019.00070},
+}</code></pre>
+
+<pre><code class="language-tex">@inproceedings{izadi2022catiss,
+  author = {Izadi, Maliheh},
+  booktitle = {2022 IEEE/ACM 1st International Workshop on Natural Language-Based Software Engineering (NLBSE)},
+  title = {CatIss: An Intelligent Tool for Categorizing Issues Reports using Transformers},
+  year = {2022},
+  pages = {44-47},
+  doi = {10.1145/3528588.3528662},
+  url = {https://doi.ieeecomputersociety.org/10.1145/3528588.3528662},
+  publisher = {IEEE Computer Society}
+}</code></pre>
+
+              <h6>Code Comment Classification</h6>
+              <p>Please cite if participating in the code comment classification competition:</p>
+              <pre><code class="language-tex">@article{rani2021,
+  title={How to identify class comment types? A multi-language approach for class comment classification},
+  author={Rani, Pooja and Panichella, Sebastiano and Leuenberger, Manuel and Di Sorbo, Andrea and Nierstrasz, Oscar},
+  journal={Journal of systems and software},
+  volume={181},
+  pages={111047},
+  year={2021},
+  publisher={Elsevier}
+}</code></pre>
+ <pre><code class="language-tex">@inproceedings{DiSorboVPCP21,
+   author    = {Di Sorbo, Andrea and Visaggio, Corrado Aaron and Di Penta, Massimiliano and Canfora, Gerardo and Panichella, Sebastiano},
+   title     = {An NLP-based Tool for Software Artifacts Analysis},
+   booktitle = { {IEEE} International Conference on Software Maintenance and Evolution,
+                {ICSME} 2021, Luxembourg, September 27 - October 1, 2021},
+   pages     = {569--573},
+   publisher = { {IEEE} },
+   year      = {2021},
+   doi       = {10.1109/ICSME52107.2021.00058}
+}</code></pre>
+
+                <!-- <h3>Code Comment Classification</h3> -->
+
+
+                <!--<p>For the competition, we provide a dataset encompassing more than 800k labeled issue reports (as bugs, enhancements, and questions) extracted from real open-source projects. You are invited to leverage this dataset for evaluating your classification approaches and compare the achieved results against a proposed baseline approach (based on FastText).</p>
+
+
+                            <h3>Competition overview</h3>
+
+							<p>We created a  <a href="https://colab.research.google.com/drive/1ymUYvAJoVbXZhinypaFZTfj0Q69g3rTp?usp=sharing">Colab notebook</a> with detailed information about the competition (provided data, baseline approach, paper submission, paper format, etc.). </p>
+
+							<p>If you want to participate, you must:</p>
+							<ul>
+								<li>Train and tune a <span style="text-decoration: line-through;">multi-label</span> multi-class classifier using the provided training set. The classifier should assign one label to an issue.</li>
+								<li>Evaluate your classifier on the provided test set</li>
+								<li>Write a paper (4 pages max.) describing:</li>
+									<ul>
+									   <li>The architecture and details of the classifier</li>
+									   <li>The procedure used to pre-process the data</li>
+									   <li>The procedure used to tune the classifier on the training set</li>
+									   <li>The results of your classifier on the test set</li>
+									   <li>Additional info.: provide a link to your code/tool with proper documentation on how to run it</li>
+									</ul>
+								<li>Submit the paper by emailing the tool competition organizers (see below)</li>
+                            </ul>
+
+							<p>Submissions will be evaluated and accepted based on correctness and reproducibility, defined by the following criteria:</p>
+								<ul>
+								   <li>Clarity and detail of the paper content</li>
+								   <li>Availability of the code/tool, released as open-source</li>
+								   <li>Correct training/tuning/evaluation of your code/tool on the provided data</li>
+								   <li>Clarity of the code documentation</li>
+								</ul>
+
+							<p>The accepted submissions will be published at the workshop proceedings.</p>
+
+							<p>The submissions will be ranked based on the F1 score achieved by the proposed classifiers on the test set, as indicated in the papers.</p>
+
+							<p>The submission with the highest F1 score will be the winner of the competition.</p>
+
+							<h5>How to participate?</h5>
+
+                            -->
+
+                        </div>
+                        <div class="col-md-4">
+                            <h4  class="subsection">Important Dates</h4>
+
+                            <h6 class="text-primary">Paper/tool submission</h6>
+                            <p><b><del>February 13, 2023</del></b> <span style="color:red"><b>February 16, 2023</b></span></p>
+                            <!--                            <h6 class="text-primary">Competition Report Deadline</h6>-->
+                            <!--                            <p><b>February 21, 2022</b></p>-->
+                            <h6 class="text-primary">Acceptance notification</h6>
+                            <p><b>February 27, 2023</b></p>
+                            <!--                            <h6 class="text-primary">Competition Author Notification</h6>-->
+                            <!--                            <p><b>March 4, 2022</b></p>-->
+                            <h6 class="text-primary">Camera-ready paper submission</h6>
+                            <p><b>March 17, 2023</b></p>
+                            <!--                            <h6 class="text-primary">Date of Workshop</h6>-->
+                            <!--                            <p><b>TBD</b></p>-->
+
+							All dates are Anywhere on Earth (AoE).
+
+
+                            <h4  class="subsection">Important Links</h4>
+
+                            <p><a href="https://github.com/nlbse2023/issue-report-classification">Issue report classification repository</a></p>
+
+                            <p><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">Code comment classification notebook</a></p>
+
+                            <p><a href="https://github.com/nlbse2023/code-comment-classification">Code comment classification repository</a></p>
+
+                            <p><a href="https://forms.gle/x1Wy2iA8L7ju6mNb8">Submission form</a></p>
+
+			    <h4 class="subsection">NLBSE'23 SCP special issue</h4>
+                            <p>The authors of the best accepted (research and tool) papers will be invited to develop and submit a software tool to the NLBSE'23 special issue in the Software Track of the Journal of Science of Computer Programming. </p>
+
+
+			    </div>
+
+
+            </div>
+        </div>
+      <footer class="footer" data-background-color="black">
+  <div class="container">
+    <nav>
+	    <ul>
+
+        <li>
+          <a href="#"><i class='fa fa-balance-scale'></i> NLBSE&#39;23</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</footer>
+    </div>
+  </body>
+
+<script src="/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="/js/core/popper.min.js" type="text/javascript"></script>
+<script src="/js/core/bootstrap.min.js" type="text/javascript"></script>
+
+<script src="/js/plugins/bootstrap-switch.js"></script>
+
+<script src="/js/plugins/nouislider.min.js" type="text/javascript"></script>
+
+<script src="/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+
+<script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        nowuiKit.initSliders();
+    });
+
+    function scrollToDownload() {
+
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+</script>
+
+
+
+
+
+
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+
+
+      <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    <script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+
+</html>
+<!--          <p><strong>Java tool competition</strong>: As for recent years, we invite researchers to participate in the competition with their unit test generation tool for <strong><em>Java</em></strong>. Tools will be evaluated against a benchmark with respect to code coverage and mutation score.</p>-->
+
+<!--    <p style="text-align: center;">-->
+<!--      <img src="../img/java.png" title="Java test example" alt="Java test example" />-->
+<!--    </p>-->
+
+<!--    <p><strong>Cyber-physical systems (CPS) testing competition</strong>: In addition to the traditional Java tool competition, we also organize a CPS testing competition on self-driving cars simulation environments. Specifically, in collaboration with the <a href="https://beamng.gmbh/research/ " target="_blank">BeamNG research team</a>, this competition focuses on the generation of scenarios using BeamNG self-driving cars simulator.-->
+<!--    </p>-->
+
+<!--    <p style="text-align: center;">-->
+<!--      <img src="../img/beam-1.png" alt="Beam-NG Visual 1" title="Beam-NG Visual 1" /><br />-->
+<!--      <img src="../img/beam-2.png" alt="Beam-NG Visual 2" title="Beam-NG Visual 2" />-->
+<!--    </p>-->
+
+<!--    <p><strong>For future editions</strong> of the SBST Tool competition (e.g., from 2022) we foresee the addition of a further "Python testing tool competition" where:-->
+<!--      <ul>-->
+<!--        <li>an infrastructure will be provided to generate the tools</li>-->
+<!--        <li>it is conducted in an evaluation setting similar to the one performed for the traditional Java testing tool competition</li>-->
+<!--      </ul>-->
+<!--    </p>-->
+
+<!--    <h3>How to participate in the two competitions?</h3>-->
+
+<!--    <h4>Java tool competition:</h4>-->
+
+<!--    <p>The infrastructure concerning the Java tool competition is available on GitHub and can also be tried using Docker: <a href="https://github.com/JUnitContest/junitcontest" target="_blank">https://github.com/JUnitContest/junitcontest</a>. It is important to note that some changes are expected to the infrastructure during the end of 2020 and during the beginning of 2021.</p>-->
+
+<!--    <p>To participate:-->
+<!--      <ul>-->
+<!--        <li>notify the organizers by sending an email to Sebastiano Panichella, Fiorella Zampetti Alessio Gambi and Vincenzo Riccio (<a href="mailto:fiorella.zampetti@unisannio.it, panc@zhaw.ch, alessio.gambi@uni-passau.de, vincenzo.riccio@usi.ch" target="_blank">fiorella.zampetti@unisannio.it, panc@zhaw.ch, alessio.gambi@uni-passau.de, vincenzo.riccio@usi.ch</a>).</li>-->
+<!--        <li>check out the contest infrastructure and make sure your tool works well within the infrastructure.</li>-->
+<!--      </ul>-->
+<!--    </p>-->
+
+<!--    <h4>CPS testing competition</h4>-->
+
+<!--    <p>The infrastructure concerning the CPS tool competition can be found here: <a href="https://github.com/se2p/tool-competition-av" target="_blank">https://github.com/se2p/tool-competition-av</a>.</p>-->
+
+<!--    <p>To participate:-->
+<!--      <ul>-->
+<!--        <li>-->
+<!--          notify the organizers by sending an email Alessio Gambi, Vincenzo Riccio, Sebastiano Panichella, and Fiorella Zampetti  (<a href="mailto:alessio.gambi@uni-passau.de , vincenzo.riccio@usi.ch, fiorella.zampetti@unisannio.it, panc@zhaw.ch" target="_blank">alessio.gambi@uni-passau.de , vincenzo.riccio@usi.ch, fiorella.zampetti@unisannio.it, panc@zhaw.ch</a>).-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </p>-->
+
+<!--    <h3>Important Dates</h3>-->
+
+<!--    <ul>-->
+<!--      <li>Tool submission: <strong>February 12</strong></li>-->
+<!--      <li>Benchmark results communicated to authors: <strong>March 2</strong></li>-->
+<!--      <li>Submission of camera-ready paper: <strong>March 12</strong></li>-->
+<!--    </ul>-->
+
+<!--            <div class="section">-->
+<!--                <div class="container">-->
+
+
+<!--    <div class="row">-->
+<!--      <div class="col-md-8 ml-auto mr-auto text-left">-->
+
+<!--            <div class="section section-team text-center">-->
+<!--                <div class="container">-->
+<!--                    <h3 class="subtitle">Organizing Committee</h3>-->
+<!--                    <div class="team">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-6">-->
+<!--                                <div class="team-player">-->
+<!--                                    <img src="/img/sebastiano.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">-->
+<!--                                    <h4>Sebastiano Panichella</h4>-->
+<!--                                    <p class="category text-primary">Zurich University of Applied Science (ZHAW)</p>-->
+<!--                                    <a href="https://spanichella.github.io/" class="btn btn-primary btn-icon btn-round"><i class="fa fa-id-card-o"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6">-->
+<!--                                <div class="team-player">-->
+<!--                                    <img src="/img/alessio.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">-->
+<!--                                    <h4>Alessio Gambi</h4>-->
+<!--                                    <p class="category text-primary">Passau University, Germany</p>-->
+<!--                                    <a href="https://staff.fim.uni-passau.de/~gambi/" class="btn btn-primary btn-icon btn-round"><i class="fa fa-id-card-o"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-6">-->
+<!--                                <div class="team-player">-->
+<!--                                    <img src="/img/fiorella.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">-->
+<!--                                    <h4>Fiorella Zampetti</h4>-->
+<!--                                    <p class="category text-primary">University of Sannio</p>-->
+<!--                                    <a href="https://scholar.google.com/citations?user=-qRba7AAAAAJ&hl=it" class="btn btn-primary btn-icon btn-round"><i class="fa fa-id-card-o"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6">-->
+<!--                                <div class="team-player">-->
+<!--                                    <img src="/img/vincenzo.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">-->
+<!--                                    <h4>Vincenzo Riccio</h4>-->
+<!--                                    <p class="category text-primary">University of Lugano</p>-->
+<!--                                    <a href="https://search.usi.ch/en/people/39b5978277864981b53183b0c8e7660b/riccio-vincenzo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-id-card-o"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+<!--
+To participate: <br />
+<ul>
+<li>notify the organizers by sending an email to Xavier Devroey, Sebastiano Panichella, and Alessio Gambi (<a href="mailto:x.d.m.devroey@tudelft.nl,panichella@ifi.uzh.ch,alessio.gambi@uni-passau.de">x.d.m.devroey@tudelft.nl, panichella@ifi.uzh.ch, alessio.gambi@uni-passau.de</a>).</li>
+<li>check out the <a href="https://github.com/JUnitContest/junitcontest">contest infrastructure</a> and make sure your tool works well within the infrastructure.</li>
+</ul>
+
+<p>The competition infrastructure is available on GitHub and can also
+be tried using Docker.  Details can be found at <a
+href="https://github.com/JUnitContest/junitcontest">https://github.com/JUnitContest/junitcontest</a>.
+
+<h3>Important dates</h3>
+<ul>
+<li>Tool submission: February 3
+<li>Benchmark results communicated to authors: February 28
+<li>Submission of camera-ready paper: <strike>March 16</strike> <b style="color:red;">April 7</b>
+</ul>
+<h3>Organization committee</h3>
+<ul>
+<li><a href="http://xdevroey.be/">Xavier Devroey (Chair)</a> - Delft University of Technology, Netherlands</li>
+<li><a href="https://spanichella.github.io/">Sebastiano Panichella</a> - Zurich University of Applied Science (ZHAW), Switzerland</li>
+<li><a href="https://staff.fim.uni-passau.de/~gambi/">Alessio Gambi</a> - Passau University, Germany</li>
+</ul>
+-->
