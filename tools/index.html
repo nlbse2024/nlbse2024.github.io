@@ -124,72 +124,55 @@
 
                 <!--Tool competition slides <a href=""> <img src="../img/pdf.png" style="width:20px;height:20px;"> </a>-->
                 
-                <div class="row">
-                  <table>
-                    <tr>
-                      <td colspan="2"><h6>TBA</h6></td>
-                    </tr>
-                  </table>
-                </div>
-                
-                <!--<h3>Introduction</h3>
+                <h3>Introduction</h3>
 
                 <p>NLP-based approaches and tools have been proposed to improve the efficiency of software engineers, processes, and products, by automatically processing natural language artifacts (issues, emails, commits, etc.).</p>
 
                 <p>We believe that the availability of accurate tools is becoming increasingly necessary to improve Software Engineering (SE) processes. Two important processes are (i) issue management and prioritization and (ii) code comment classification where developers have to understand, classify, prioritize, assign, etc. incoming issues and code comments reported by end-users and developers.</p>
 
-							  <p>We are pleased to announce the second edition of the NLBSE'24 tool competition on <b>issue report classification</b> and, for the first time on <b>code comment classification</b>; two important tasks in issue and code comment management and prioritization.</p>
+							  <p>We are pleased to announce the third edition of the NLBSE'24 tool competition on <b>issue report classification</b> and, for the second time on <b>code comment classification</b>; two important tasks in issue and code comment management and prioritization.</p>
 
                 <p>You are invited to participate in one or both tool competitions.</p>
 
                 <h3 id="issue-report-classification">Issue Report Classification</h3>
                 <p>
-                 The issue report classification competition consists of building and assessing a
-			<b>multi-class classification model</b> to classify issue reports
-			as belonging to one category
-			representing the type of information
-			they convey.
+                  The issue report classification competition consists of building and assessing a set of
+                  <b>multi-class classification models</b> to classify issue reports
+                  as belonging to one category representing the type of information they convey.
                 </p>
                 <p>
-                  We provide a dataset encompassing more than <b>1.4 million</b> labeled issue reports
-			(as bugs, enhancements, questions, and documentation)
-			extracted from real open-source projects.
-                  You are invited to leverage this dataset
-			to evaluate your proposed approache(s)
-			and compare your achieved results against
-			our baselines (based on FastText and RoBERTa).
+                  We provide a dataset encompassing <b>3 thousand</b> labeled issue reports
+                  (as bugs, enhancements, and questions) extracted from 5 real open-source projects.
+                  You are invited to leverage this dataset to evaluate your proposed approach
+                  and compare your achieved results against our baselines (based on Sentence Transformers).
                 </p>
                 <p>
-                  You must train, tune and evaluate your multi-class classification model(s)
-			using the provided training and test sets.
-			To access these datasets as well as the competition's rules and baselines,
-			please check out our
-			<b><a href="https://github.com/nlbse2024/issue-report-classification">repository</a></b>.
-		</p>-->
+                  You must train, tune and evaluate your multi-class classification models
+			            using the provided training and test sets.
+			            To access these datasets as well as the competition's rules and baselines,
+			            please check out our
+			            <b><a href="https://github.com/nlbse2024/issue-report-classification">repository</a></b>.
+		            </p>
 
-                <!-- <h6>Competition overview</h6> -->
+                <h6>Competition overview</h6>
 
+                <p>The submissions will be ranked based on the average multi-class F1 score achieved by the proposed classifiers on the test sets, as indicated in the papers.</p>
 
-                <!-- <p>The submissions will be ranked based on the multi-class F1 score (micro-averaged) achieved by the proposed classifiers on the test set, as indicated in the papers.</p> -->
+							  <p>The submission with the highest average F1 score will be the winner of the competition.</p>
 
-							  <!-- <p>The submission with the highest F1 score will be the winner of the competition.</p> -->
-
-                <!--<h6>Updates</h6>
+                <h6>Updates</h6>
 
                 <p>Compared to the <a href="https://nlbse2023.github.io/tools/">2023 version</a>
-			of the issue report competition, we have made the following changes:</p>
+                  of the issue report competition, we have made the following changes:
+                </p>
                 <ul>
-                  <li>we have increased the size of the competition dataset from 800K to 1.4M issue reports,</li>
-                  <li>a new category labeled as 'documentation' is added to the dataset,</li>
-                  <li>we included synonyms of labels in the new dataset,</li>
-                  <li>we removed multi-label issues from the dataset,</li>
-                  <li>similarly, we removed non-english issues from the dataset, and finally</li>
-                  <li>we added a Transformer-based (RoBERTa) baseline to this round.</li>
+                  <li>smaller multi repo dataset,</li>
+                  <li>we added a SentenceTransformer-based (SetFit) baseline to this round.</li>
                </ul>
 
-	       <p>The issue report classification competition is organized by: <b>Rafael Kallis</b> (<a href="mailto:rk@rafaelkallis.com">rk@rafaelkallis.com</a>) and <b>Maliheh Izadi</b> (<a href="mailto:m.izadi@tudelft.nl">m.izadi@tudelft.nl</a>).</p>
+               <p>The issue report classification competition is organized by: <b>Rafael Kallis</b> (<a href="mailto:rk@rafaelkallis.com">rk@rafaelkallis.com</a>) and <b>Giuseppe Colavito</b> (<a href="mailto:giuseppe.colavito@uniba.it">giuseppe.colavito@uniba.it</a>).</p>
 
-               <h3 id="code-comment-classification">Code Comment Classification</h3>
+               <!-- <h3 id="code-comment-classification">Code Comment Classification</h3>
                <p>
                 The code comment classification competition consists of building and testing <b>a set of binary classifiers</b> to classify class comment sentences as belonging to one or more categories representing the types of information that a sentence is conveying.
                </p>
@@ -219,7 +202,7 @@
                </p> -->
 
 
-              <!--<h3>Participation</h3>
+              <h3>Participation</h3>
               <p>
                 To participate in any of the competitions, you must train, tune and evaluate your models using the provided training and test sets of the respective competition.
               </p>
@@ -232,24 +215,11 @@
 							  <li>The procedure used to tune the classifiers on the training sets;</li>
 							  <li>The results of your classifiers on the test sets;</li>
 							  <li>A link to the code/tool with proper documentation on how to run it and replicate the results.</li>
-							</ul>-->
-              <!-- <p>To participate in the competition, you must:</p>
-							<ul>
-								<li>Train and tune a set of Binary Classifier using the provided training sets (more details below).</li>
-								<li>Evaluate your classifier on the provided test sets</li>
-								<li>Write a paper (2-4 pages) describing:</li>
-									<ul>
-									  <li>The architecture and details of the classification models;</li>
-									  <li>The procedure used to pre-process the data;</li>
-									  <li>The procedure used to tune the classifiers on the training set;</li>
-									  <li>The results of your classifiers on the test set;</li>
-									  <li>Additional info.: provide a link to your code/tool with proper documentation on how to run it and replicate the results</li>
-									</ul>
-              </ul> -->
+							</ul>
 
-						  <!--<p>Submit the paper by the deadline using our <a href="https://forms.gle/x1Wy2iA8L7ju6mNb8">submission form</a>.</p>
+						  <p>Submit the paper by the deadline using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv92ATrx9sobTv8qODNGFo_Hdgk_ArdJUE_mJ7qivpt2KmIA/viewform?usp=sf_link">submission form</a>.</p>
 
-              <p>All submissions must conform to the <a href="https://conf.researchr.org/track/icse-2023/icse-2023-technical-track#how-to-submit">ICSE'23 formatting and submission instructions</a> and do not need to be double-blinded.</p>
+              <p>All submissions must conform to the <a href="https://conf.researchr.org/track/icse-2024/icse-2024-workshops#Call-for-Workshops">ICSE'24 formatting and submission instructions</a> and do not need to be double-blinded.</p>
 
               <p>Participation in both competitions is allowed, but requires a <b>distinct</b> paper for each submission.</p>
 
@@ -268,34 +238,33 @@
 
 							<h6>Issue Report Classification</h6>
               <p>
-                Participants will submit one or more multi-class classifiers and the submissions will be ranked based on the F1 score (micro-averaged) achieved by the proposed classifiers on the <a href="https://github.com/nlbse2024/issue-report-classification">issue report test set</a>, as indicated in the papers.
+                Participants will submit a set of multi-class classifiers and the submissions will be ranked based on the average F1 score achieved by the proposed classifiers on the <a href="https://github.com/nlbse2024/issue-report-classification">issue report test set</a>, as indicated in the papers.
               </p>
               <p>
                 The submission with the highest F1 score will be the <b>winner</b> of the issue report classification competition.
               </p>
 
-              <h6>Code Comment Classification</h6>
+              <!-- <h6>Code Comment Classification</h6>
               <p>
                 Since participants will submit a set of binary classifiers (based on a single ML/DL model -- see more details in our <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b>), we will use a formula to rank the competition submissions and determine a winner.
               </p>
-
 
               <p>
                   The formula, specified in our <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b> , accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the proportion of classifiers that improve the baseline classifiers. Essentially, we encourage participants to improve as many baseline classifiers as  possible.
               </p>
               <p>
                  The reported F1 scores and count of outperforming classifiers in the paper will be used to rank the participants.
-              </p>
+              </p> -->
 
               <h3 id="citing">Citing relevant work</h3>
               <p>
                 Since you will be using the dataset and possibly the original work behind the dataset, please cite the following references in your paper:
               </p>
-              <pre><code class="language-tex">@inproceedings{nlbse2023,
-  author={Kallis, Rafael and Izadi, Maliheh and Pascarella, Luca and Chaparro, Oscar and Rani, Pooja},
-  title={The NLBSE'23 Tool Competition},
-  booktitle={Proceedings of The 2nd International Workshop on Natural Language-based Software Engineering (NLBSE'23)},
-  year={2023}
+              <pre><code class="language-tex">@inproceedings{nlbse2024,
+  author={Kallis, Rafael and Colavito, Giuseppe and Al-Kaswan, Ali and Pascarella, Luca and Chaparro, Oscar and Rani, Pooja},
+  title={The NLBSE'24 Tool Competition},
+  booktitle={Proceedings of The 3rd International Workshop on Natural Language-based Software Engineering (NLBSE'24)},
+  year={2024}
 }</code></pre>
 
               <h6>Issue Report Classification</h6>
@@ -323,17 +292,6 @@
   doi       = {10.1109/ICSME.2019.00070},
 }</code></pre>
 
-<pre><code class="language-tex">@inproceedings{izadi2022catiss,
-  author = {Izadi, Maliheh},
-  booktitle = {2022 IEEE/ACM 1st International Workshop on Natural Language-Based Software Engineering (NLBSE)},
-  title = {CatIss: An Intelligent Tool for Categorizing Issues Reports using Transformers},
-  year = {2022},
-  pages = {44-47},
-  doi = {10.1145/3528588.3528662},
-  url = {https://doi.ieeecomputersociety.org/10.1145/3528588.3528662},
-  publisher = {IEEE Computer Society}
-}</code></pre>
-
               <h6>Code Comment Classification</h6>
               <p>Please cite if participating in the code comment classification competition:</p>
               <pre><code class="language-tex">@article{rani2021,
@@ -356,7 +314,7 @@
    doi       = {10.1109/ICSME52107.2021.00058}
 }</code></pre>
 
---><!-- <h3>Code Comment Classification</h3> -->
+<!-- <h3>Code Comment Classification</h3> -->
 
 
                 <!--<p>For the competition, we provide a dataset encompassing more than 800k labeled issue reports (as bugs, enhancements, and questions) extracted from real open-source projects. You are invited to leverage this dataset for evaluating your classification approaches and compare the achieved results against a proposed baseline approach (based on FastText).</p>
@@ -422,17 +380,9 @@
 
                             <h4  class="subsection">Important Links</h4>
 
-                            <div class="row">
-                              <table>
-                                <tr>
-                                  <td colspan="2"><h6>TBA</h6></td>
-                                </tr>
-                              </table>
-                            </div>
+                            <p><a href="https://github.com/nlbse2024/issue-report-classification">Issue report classification repository</a></p>
 
-                            <!--<p><a href="https://github.com/nlbse2024/issue-report-classification">Issue report classification repository</a></p>
-
-                            <p><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">Code comment classification notebook</a></p>
+                            <!-- <p><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">Code comment classification notebook</a></p>
 
                             <p><a href="https://github.com/nlbse2024/code-comment-classification">Code comment classification repository</a></p>
 
