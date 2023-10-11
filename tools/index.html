@@ -173,22 +173,32 @@
 
                <p>The issue report classification competition is organized by: <b>Rafael Kallis</b> (<a href="mailto:rk@rafaelkallis.com">rk@rafaelkallis.com</a>) and <b>Giuseppe Colavito</b> (<a href="mailto:giuseppe.colavito@uniba.it">giuseppe.colavito@uniba.it</a>).</p>
 
-               <!-- <h3 id="code-comment-classification">Code Comment Classification</h3>
+               <h3 id="code-comment-classification">Code Comment Classification</h3>
                <p>
-                The code comment classification competition consists of building and testing <b>a set of binary classifiers</b> to classify class comment sentences as belonging to one or more categories representing the types of information that a sentence is conveying.
+                The code comment classification competition consists of building and testing a set of <b>binary classifiers</b> to classify class comment sentences as belonging to one or more categories representing the types of information that a sentence is conveying.
                </p>
                <p>
-                For the competition, we provide a dataset of <b>6738</b> class comment sentences and <b>19</b> baseline classifiers based on the Random Forest model. Participants will propose their classifiers for this task to outperform the baselines.
+                For the competition, we provide a dataset of <b>82089</b> class comment sentences and <b>19</b> categories, and a baseline classifier based on the Transformer model. Participants will propose their classifiers for this task to outperform the baselines.
                </p>
 
                <p>
-                  You must train, tune and evaluate your binary classifiers using the provided training and test sets.
-                  We created a <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b> and <b><a href="https://github.com/nlbse2024/code-comment-classification">repository</a></b> with information about the code comment classification competition including dataset, rules, baselines, and results.
+                  You must train, tune, and evaluate your classification model using the provided training and test sets.
+                  Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our <a href="https://github.com/nlbse2024/code-comment-classification/tree/main">repository</a> and <a href="">notebook (TBA)</a>.
                 </p>
 
-		<p>The code comment classification competition is organized by: <b>Pooja Rani</b> (<a href="mailto:rani@ifi.uzh.ch">rani@ifi.uzh.ch</a>), <b>Oscar Chaparro</b> (<a href="mailto:oscarch@wm.edu">oscarch@wm.edu</a>) and <b>Luca Pascarella</b> (<a href="mailto:lpascarella@ethz.ch">lpascarella@ethz.ch</a>).</p>
+                <h6>Updates</h6>
 
-              --><!-- <h6>Competition overview</h6> -->
+                <p>Compared to the <a href="https://nlbse2023.github.io/tools/">2023 version</a>
+                  of the code comment classification competition, we have made the following changes:
+                </p>
+                <ul>
+                  <li>fWe have extended the dataset of code comments for Java projects</li>
+                  <li>The <a href="https://huggingface.co/collections/AISE-TUDelft/stacc-65254a9b4d1fadc125a731dc">baseline</a> is the approach by <a href="https://github.com/AISE-TUDelft/STACC">Al-Kaswan et al.</a>, which is based on Sentence Transformers and was the winner of the 2023 competition.</li>
+               </ul>
+
+		<p>The code comment classification competition is organized by: <b>Pooja Rani</b> (<a href="mailto:rani@ifi.uzh.ch">rani@ifi.uzh.ch</a>), <b>Oscar Chaparro</b> (<a href="mailto:oscarch@wm.edu">oscarch@wm.edu</a>), <b>Luca Pascarella</b> (<a href="mailto:lpascarella@ethz.ch">lpascarella@ethz.ch</a>), and <b>Ali Al-Kaswan</b> (<a href="mailto:a.al-kaswan@tudelft.nl">a.al-kaswan@tudelft.nl</a>).</p>
+
+              <!-- <h6>Competition overview</h6> -->
 
                <!-- <p>
                 Since participants will submit a set of binary classifiers, the submissions will be ranked based on the number of classifiers that outperform the baselines by F1 score. Such performance must be computed on the test set.
@@ -245,17 +255,17 @@
                 The submission with the highest F1 score will be the <b>winner</b> of the issue report classification competition.
               </p>
 
-              <!-- <h6>Code Comment Classification</h6>
+              <h6>Code Comment Classification</h6>
               <p>
-                Since participants will submit a set of binary classifiers (based on a single ML/DL model -- see more details in our <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b>), we will use a formula to rank the competition submissions and determine a winner.
+                Since participants will submit a set of binary classifiers (based on a single DL model -- see more details in our <b><a href="">notebook (TBA)</a></b>), we will use a formula to rank the competition submissions and determine a winner.
               </p>
 
               <p>
-                  The formula, specified in our <b><a href="https://colab.research.google.com/drive/1cW8iUPY9rTjZdXnGYtJ4ARBSISyKieWt">notebook</a></b> , accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the proportion of classifiers that improve the baseline classifiers. Essentially, we encourage participants to improve as many baseline classifiers as  possible.
+                  The formula, specified in our notebook, accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the total runtime the proposed model takes to predict the category of the test set instances.
               </p>
               <p>
-                 The reported F1 scores and count of outperforming classifiers in the paper will be used to rank the participants.
-              </p> -->
+                 The submission with the highest score, determined by our formula, will be the winner of the competition.
+              </p> 
 
               <h3 id="citing">Citing relevant work</h3>
               <p>
@@ -304,27 +314,26 @@
   doi={10.1109/NLBSE59153.2023.00011}
 }</code></pre>
 
-              <!-- <h6>Code Comment Classification</h6>
+              <h6>Code Comment Classification</h6>
               <p>Please cite if participating in the code comment classification competition:</p>
               <pre><code class="language-tex">@article{rani2021,
-  title={How to identify class comment types? A multi-language approach for class comment classification},
-  author={Rani, Pooja and Panichella, Sebastiano and Leuenberger, Manuel and Di Sorbo, Andrea and Nierstrasz, Oscar},
-  journal={Journal of systems and software},
-  volume={181},
-  pages={111047},
-  year={2021},
-  publisher={Elsevier}
-}</code></pre>
- <pre><code class="language-tex">@inproceedings{DiSorboVPCP21,
-   author    = {Di Sorbo, Andrea and Visaggio, Corrado Aaron and Di Penta, Massimiliano and Canfora, Gerardo and Panichella, Sebastiano},
-   title     = {An NLP-based Tool for Software Artifacts Analysis},
-   booktitle = { {IEEE} International Conference on Software Maintenance and Evolution,
-                {ICSME} 2021, Luxembourg, September 27 - October 1, 2021},
-   pages     = {569--573},
-   publisher = { {IEEE} },
-   year      = {2021},
-   doi       = {10.1109/ICSME52107.2021.00058}
-}</code></pre> -->
+                title={How to identify class comment types? A multi-language approach for class comment classification},
+                author={Rani, Pooja and Panichella, Sebastiano and Leuenberger, Manuel and Di Sorbo, Andrea and Nierstrasz, Oscar},
+                journal={Journal of systems and software},
+                volume={181},
+                pages={111047},
+                year={2021},
+                publisher={Elsevier}
+              }
+              </code></pre>
+ <pre><code class="language-tex">@INPROCEEDINGS{AlKaswan2023,
+  author={Al-Kaswan, Ali and Izadi, Maliheh and Van Deursen, Arie},
+  booktitle={2023 IEEE/ACM 2nd International Workshop on Natural Language-Based Software Engineering (NLBSE)}, 
+  title={STACC: Code Comment Classification using SentenceTransformers}, 
+  year={2023},
+  pages={28-31}
+}
+</code></pre>
 
 <!-- <h3>Code Comment Classification</h3> -->
 
