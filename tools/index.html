@@ -183,7 +183,7 @@
 
                <p>
                   You must train, tune, and evaluate your classification model using the provided training and test sets.
-                  Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our <a href="https://github.com/nlbse2024/code-comment-classification/tree/main">repository</a> and <a href="">notebook (TBA)</a>.
+                  Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our <a href="https://github.com/nlbse2024/code-comment-classification/tree/main">repository</a> and <a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P?usp=sharing">notebook</a>.
                 </p>
 
                 <h6>Updates</h6>
@@ -192,7 +192,7 @@
                   of the code comment classification competition, we have made the following changes:
                 </p>
                 <ul>
-                  <li>fWe have extended the dataset of code comments for Java projects,</li>
+                  <li>We have extended the dataset of code comments for Java projects, and </li>
                   <li>The <a href="https://huggingface.co/collections/AISE-TUDelft/stacc-65254a9b4d1fadc125a731dc">baseline</a> is the approach by <a href="https://github.com/AISE-TUDelft/STACC">Al-Kaswan et al.</a>, which is based on Sentence Transformers and was the winner of the 2023 competition.</li>
                </ul>
 
@@ -257,11 +257,11 @@
 
               <h6>Code Comment Classification</h6>
               <p>
-                Since participants will submit a set of binary classifiers (based on a single DL model -- see more details in our <b><a href="">notebook (TBA)</a></b>), we will use a formula to rank the competition submissions and determine a winner.
+                Since participants will submit a set of binary classifiers (based on a single DL model -- see more details in our <b><a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P?usp=sharing">notebook</a></b>), we will use a formula to rank the competition submissions and determine a winner.
               </p>
 
               <p>
-                  The formula, specified in our notebook, accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the total runtime the proposed model takes to predict the category of the test set instances.
+                  The formula, specified in our notebook, accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the average runtime the proposed model takes to predict the category of the test set instances.
               </p>
               <p>
                  The submission with the highest score, determined by our formula, will be the winner of the competition.
@@ -332,6 +332,15 @@
   title={STACC: Code Comment Classification using SentenceTransformers}, 
   year={2023},
   pages={28-31}
+}
+</code></pre>
+
+<pre><code class="language-tex">@inproceedings{pascarella2017,
+  title={Classifying code comments in Java open-source software systems},
+  author={Pascarella, Luca and Bacchelli, Alberto},
+  booktitle={2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)},
+  year={2017},
+  organization={IEEE}
 }
 </code></pre>
 
